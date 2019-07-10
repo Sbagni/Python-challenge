@@ -3,8 +3,8 @@ import os
 import csv
 
 
-greatest_increase = ["", 0]
-greatest_decrease = ["", 9999999999999999999]   
+greatest_increase = ['', 0]
+greatest_decrease = ['', 9999999999999999999]   
 change_list = []
 total_change = 0
 months = [] 
@@ -53,6 +53,13 @@ print(f"Total Months:{str(total_m)}")
 print(f"Total:{int(net_total)}")
 
 print(f"Average_change : {int(avg_change)}")
+
+print(f"Greatest Increase in profit:{ greatest_increase('[' str(row) ']') + change_value}")
+
+print(f"Greatest Decrease in profit:{ greatest_decrease('[' str(row) ']') + change_value}")
+
+
+
 
 
 
