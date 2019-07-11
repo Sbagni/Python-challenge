@@ -20,11 +20,11 @@ with open(budget_csv, 'r') as csvfile:
     for row in csvreader:
 
         net_total+=int(row[1])
-        total_m=total_m+1
-        change_value = int(row[1]-previous_row[1])
+        total_m = total_m+1
+        change_value = int(row[1]-previous_row)
 
         change_list.append(change_value)
-        months.append (row[0])
+        months.append(row[0])
         previous_row = row
 
         total_change = total_change + change_value 
@@ -32,7 +32,7 @@ with open(budget_csv, 'r') as csvfile:
            greatest_increase[0] = str(row[0])
            greatest_increase[1] = change_value
 
-        if netchange < greatest_decrease[1]:
+        if change_value < greatest_decrease[1]:
            greatest_decrease[0] = str(row[0])
            greatest_decrease[1] = change_value
 		
@@ -54,9 +54,11 @@ print(f"Total:{int(net_total)}")
 
 print(f"Average_change : {int(avg_change)}")
 
-print(f"Greatest Increase in profit:{ greatest_increase('[' str(row) ']') + change_value}")
+print(f"Greatest Increase in profit:{ greatest_increase('['+str(row)+']') + change_value}")
 
-print(f"Greatest Decrease in profit:{ greatest_decrease('[' str(row) ']') + change_value}")
+print(f"Greatest Decrease in profit:{ greatest_decrease('['+str(row)+']') + change_value}")
+
+
 
 
 

@@ -1,10 +1,7 @@
 import os
 import csv
 
-vote_count = 0 
-candidate_names = []
-candidate_votes = [0,0,0,0]
-
+candidates = {}
 
 # Path to collect data from the Resources folder
 budget_csv = os.path.join('.','Resources','election_data.csv')
@@ -14,34 +11,37 @@ with open(budget_csv, 'r') as csvfile:
     header = next(csvreader)
 
     for row in csvreader:
+        if row[2] in candidates.keys():
+            candidates[row[2]]+=1
+        else:
+            candidates[row[2]] = 1
 
-        vote_count +=1
-        
-        	if candidate[0] =!candidate[0+1]:
-    		candidate_names.append.[str(candidate)]
-            print(candidate)
+        total_votes = sum(candidates.values())
+        total_votes
 
-            
+        list_candidates = candidates.keys()
+        list_candidates
+        votes_per = [f'{(x/total_votes)*100:.3f}%' for x in candidates.values()]
+        votes_per
+        winner = list(candidates.keys())[candidates.values()(max(candidates.values()))]
+        winner
 
-            for candidates in candidate_names:
-            	candidate_votes +=1
-            	print(candidate_votes)
-            	next candidate
-            	vote_percentage = candidate_votes/vote_count*100
-            	print(vote_percentage) 
-            	 
-         print(vote_count)     
-   
 
 print("Election results")
 
 print("--------------------------")
 
-print(f"Total votes: {int(vote_count)}")
+print(f"Total votes: {int(total_votes)}")
 
-print("---------------------------")
+print("-----------------------------")
 
-print()
+print(f'{candidates[list_candidates]}":"{candidates[votes_per]}"("{candidates[candidates.values()]}'")")
+
+print("-------------------------------")
+
+print(f'Winner: {str(winner)}')
+
+
 
 
 
