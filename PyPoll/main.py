@@ -3,9 +3,6 @@ import csv
 
 candidates = {}
 
-#file_to_output = os.path.join("poll_analysis.txt")
-
-# Path to collect data from the Resources folder
 election_csv = os.path.join('.','Resources','election_data.csv')
 with open(election_csv, 'r') as csvfile:
 
@@ -20,6 +17,7 @@ with open(election_csv, 'r') as csvfile:
 
         total = candidates.values()
         total_votes = sum(total)
+
             
         list_candidates = candidates.keys()
             
@@ -28,20 +26,25 @@ with open(election_csv, 'r') as csvfile:
 
         winner = list(candidates.keys())[list(candidates.values()).index(max(candidates.values()))]
         winner
-    
+        
+
+
 print("Election results")
 
-print("--------------------------")
+print("----------------------------")
 
 print(f"Total votes: {int(total_votes)}")
 
 print("-----------------------------")
-
-print(f'{candidates(str["list_candidates"])":" ["votes_per"] "% (" ["total"]}'")")
-
+i = 0
+for candidate, vote in candidates.items():
+    print(f'{candidate}, {vote} , {votes_per[i]}') 
+    i+=1
 print("-------------------------------")
 
-print(f'Winner: {candidates(winner)}')
+print(f'Winner: {winner}')
+
+print("-------------------------------")
 
 
 
