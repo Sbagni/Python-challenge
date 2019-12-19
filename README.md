@@ -1,7 +1,9 @@
 
 
 **Python-challenge**
-Wrote two python codes 
+Created two python scripts:
+
+
 **1.Pybank**
 In this assignment I created a Python script for analyzing the financial records of the company. I used the financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`. 
 
@@ -30,7 +32,37 @@ analysis of the script is given below:
   ```
 
 **2.Pypoll**
+In this assignment,I focussed on  vote-counting process. 
+
+I used a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. My task was to create a Python script that analyzes the votes and calculates each of the following:
+
+  * The total number of votes cast
+
+  * A complete list of candidates who received votes
+
+  * The percentage of votes each candidate won
+
+  * The total number of votes each candidate won
+
+  * The winner of the election based on popular vote.
+
+* Analysis looks like to the one below:
+
+  ```text
+  Election Results
+  -------------------------
+  Total Votes: 3521001
+  -------------------------
+  Khan: 63.000% (2218231)
+  Correy: 20.000% (704200)
+  Li: 14.000% (492940)
+  O'Tooley: 3.000% (105630)
+  -------------------------
+  Winner: Khan
+  -------------------------
+  ```
 
 
 
-![screenshot](https://github.com/Sbagni/Python-challenge/blob/master/PyPoll/PyPoll%20output%20(2).png)
+
+
