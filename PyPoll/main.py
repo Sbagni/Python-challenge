@@ -35,16 +35,16 @@ print("----------------------------")
 
 print(f"Total votes: {int(total_votes)}")
 
-print("-----------------------------")
+print("----------------------------")
 i = 0
 for candidate, vote in candidates.items():
     print(f'{candidate}, {vote} , {votes_per[i]}') 
     i+=1
-print("-------------------------------")
+print("------------------------------")
 
 print(f'Winner: {winner}')
 
-print("-------------------------------")
+print("------------------------------")
 
 
 
