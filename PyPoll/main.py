@@ -31,18 +31,18 @@ with open(election_csv, 'r') as csvfile:
 
 print("Election results")
 
-print("----------------------------")
+print("--------------------------------")
 
-print(f"Total votes: {int(total_votes)}")
+print(f" Total votes: {int(total_votes)}")
 
-print("----------------------------")
+print("---------------------------------")
 i = 0
 for candidate, vote in candidates.items():
     print(f'{candidate}, {vote} , {votes_per[i]}') 
     i+=1
 print("------------------------------")
 
-print(f'Winner: {winner}')
+print(f" Winner: {winner}")
 
 print("------------------------------")
 
