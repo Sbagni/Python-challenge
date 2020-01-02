@@ -47,15 +47,15 @@ with open(budget_csv, 'r') as csvfile:
         avg_change = total_change/len(months)
    
 output = (
-   f"\nFinancial Analysis\n"
-   f"----------------------------\n"
+   f"\n Financial Analysis \n"
+   f"------------------------------\n"
    f"Total Months: {total_m}\n"
    f"Total: ${net_total}\n"
    f"Average  Change: ${avg_change:.2f}\n"
    f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})\n"
    f"Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})\n")
 
-with open(file_to_output, "w") as text_file:
+with open(file_to_output, "w") as txt_file:
    txt_file.write(output)  
 
    file_to_output       
