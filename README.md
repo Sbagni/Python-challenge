@@ -1,10 +1,12 @@
 
 
 **Python-challenge**
-Created two python scripts:
+
+For this assignment I created two python scripts, Pybank and Pypoll.
 
 
 **Pybank**
+
 In this assignment I created a Python script for analyzing the financial records of the company. I used the financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`. 
 
 * Created a Python script that analyzes the records to calculate each of the following:
