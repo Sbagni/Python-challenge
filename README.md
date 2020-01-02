@@ -4,7 +4,7 @@
 Created two python scripts:
 
 
-**1.Pybank**
+**Pybank**
 In this assignment I created a Python script for analyzing the financial records of the company. I used the financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`. 
 
 * Created a Python script that analyzes the records to calculate each of the following:
@@ -31,7 +31,7 @@ analysis of the script is given below:
   Greatest Decrease in Profits: Sep-2013 ($-2196167)
   ```
 
-**2.Pypoll**
+**Pypoll**
 In this assignment,I focussed on  vote-counting process. 
 
 I used a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. My task was to create a Python script that analyzes the votes and calculates each of the following:
@@ -46,7 +46,7 @@ I used a set of poll data called [election_data.csv](PyPoll/Resources/election_d
 
   * The winner of the election based on popular vote.
 
-* Analysis looks like to the one below:
+* Analysis looks like the one below:
 
   ```text
   Election Results
